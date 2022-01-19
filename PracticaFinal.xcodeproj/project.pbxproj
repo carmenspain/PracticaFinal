@@ -13,10 +13,11 @@
 		4B8FAF4227837AEF00F45598 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B8FAF4027837AEF00F45598 /* Main.storyboard */; };
 		4B8FAF4427837AFA00F45598 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B8FAF4327837AFA00F45598 /* Assets.xcassets */; };
 		4B8FAF4727837AFA00F45598 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B8FAF4527837AFA00F45598 /* LaunchScreen.storyboard */; };
+		4BEE09E727988510000E221F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4BEE09E627988510000E221F /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4B8FAF3727837AEF00F45598 /* PracticaFinal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PracticaFinal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B8FAF3727837AEF00F45598 /* Restaurante.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Restaurante.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B8FAF3A27837AEF00F45598 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4B8FAF3C27837AEF00F45598 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4B8FAF3E27837AEF00F45598 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +25,7 @@
 		4B8FAF4327837AFA00F45598 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B8FAF4627837AFA00F45598 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B8FAF4827837AFA00F45598 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BEE09E627988510000E221F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +50,7 @@
 		4B8FAF3827837AEF00F45598 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4B8FAF3727837AEF00F45598 /* PracticaFinal.app */,
+				4B8FAF3727837AEF00F45598 /* Restaurante.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,6 +65,7 @@
 				4B8FAF4327837AFA00F45598 /* Assets.xcassets */,
 				4B8FAF4527837AFA00F45598 /* LaunchScreen.storyboard */,
 				4B8FAF4827837AFA00F45598 /* Info.plist */,
+				4BEE09E627988510000E221F /* GoogleService-Info.plist */,
 			);
 			path = PracticaFinal;
 			sourceTree = "<group>";
@@ -84,7 +87,7 @@
 			);
 			name = PracticaFinal;
 			productName = PracticaFinal;
-			productReference = 4B8FAF3727837AEF00F45598 /* PracticaFinal.app */;
+			productReference = 4B8FAF3727837AEF00F45598 /* Restaurante.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B8FAF4727837AFA00F45598 /* LaunchScreen.storyboard in Resources */,
+				4BEE09E727988510000E221F /* GoogleService-Info.plist in Resources */,
 				4B8FAF4427837AFA00F45598 /* Assets.xcassets in Resources */,
 				4B8FAF4227837AEF00F45598 /* Main.storyboard in Resources */,
 			);
@@ -290,8 +294,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = edu.ucam.PracticaFinal;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Restaurante;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -307,8 +312,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = edu.ucam.PracticaFinal;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Restaurante;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
