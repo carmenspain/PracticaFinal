@@ -10,6 +10,8 @@
 		4B33A1A0279B6F220004585C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B33A19F279B6F220004585C /* HomeViewController.swift */; };
 		4B33A1A4279C18090004585C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B33A1A3279C18090004585C /* GoogleService-Info.plist */; };
 		4B33A1A6279C1EBF0004585C /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B33A1A5279C1EBF0004585C /* HomeViewController.xib */; };
+		4B33A1A8279CBEE60004585C /* PrincipalViewControler.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B33A1A7279CBEE60004585C /* PrincipalViewControler.xib */; };
+		4B33A1AA279CBF300004585C /* PrincipalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B33A1A9279CBF300004585C /* PrincipalViewController.swift */; };
 		4B8FAF3B27837AEF00F45598 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8FAF3A27837AEF00F45598 /* AppDelegate.swift */; };
 		4B8FAF3D27837AEF00F45598 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8FAF3C27837AEF00F45598 /* SceneDelegate.swift */; };
 		4B8FAF3F27837AEF00F45598 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8FAF3E27837AEF00F45598 /* LoginViewController.swift */; };
@@ -23,6 +25,8 @@
 		4B33A19F279B6F220004585C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4B33A1A3279C18090004585C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4B33A1A5279C1EBF0004585C /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		4B33A1A7279CBEE60004585C /* PrincipalViewControler.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PrincipalViewControler.xib; sourceTree = "<group>"; };
+		4B33A1A9279CBF300004585C /* PrincipalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrincipalViewController.swift; sourceTree = "<group>"; };
 		4B8FAF3727837AEF00F45598 /* Restaurante.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Restaurante.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B8FAF3A27837AEF00F45598 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4B8FAF3C27837AEF00F45598 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,10 +75,12 @@
 			children = (
 				4B8FAF3A27837AEF00F45598 /* AppDelegate.swift */,
 				4B8FAF3C27837AEF00F45598 /* SceneDelegate.swift */,
+				4B33A1A9279CBF300004585C /* PrincipalViewController.swift */,
 				4B8FAF3E27837AEF00F45598 /* LoginViewController.swift */,
 				4B33A19F279B6F220004585C /* HomeViewController.swift */,
 				4B8FAF4027837AEF00F45598 /* Main.storyboard */,
 				4B33A1A5279C1EBF0004585C /* HomeViewController.xib */,
+				4B33A1A7279CBEE60004585C /* PrincipalViewControler.xib */,
 				4B8FAF4327837AFA00F45598 /* Assets.xcassets */,
 				4B8FAF4527837AFA00F45598 /* LaunchScreen.storyboard */,
 				4B8FAF4827837AFA00F45598 /* Info.plist */,
@@ -164,6 +170,7 @@
 				4B33A1A4279C18090004585C /* GoogleService-Info.plist in Resources */,
 				4B33A1A6279C1EBF0004585C /* HomeViewController.xib in Resources */,
 				4B8FAF4427837AFA00F45598 /* Assets.xcassets in Resources */,
+				4B33A1A8279CBEE60004585C /* PrincipalViewControler.xib in Resources */,
 				4B8FAF4227837AEF00F45598 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,6 +226,7 @@
 			files = (
 				4B8FAF3F27837AEF00F45598 /* LoginViewController.swift in Sources */,
 				4B8FAF3B27837AEF00F45598 /* AppDelegate.swift in Sources */,
+				4B33A1AA279CBF300004585C /* PrincipalViewController.swift in Sources */,
 				4B8FAF3D27837AEF00F45598 /* SceneDelegate.swift in Sources */,
 				4B33A1A0279B6F220004585C /* HomeViewController.swift in Sources */,
 			);
