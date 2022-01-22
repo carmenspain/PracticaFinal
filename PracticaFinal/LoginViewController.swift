@@ -12,16 +12,19 @@ import FirebaseAuth
 
 class LoginViewController: UIViewController {
 
+
     @IBOutlet weak var emailtf: UITextField!
     @IBOutlet weak var passwordtf: UITextField!
     @IBOutlet weak var registrarbt: UIButton!
     @IBOutlet weak var accederbt: UIButton!
+    @IBOutlet weak var googleBt: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         title = "Login"
-        
+    
     }
 
     @IBAction func registrarBtAction(_ sender: Any) {
@@ -49,6 +52,33 @@ class LoginViewController: UIViewController {
         }
     }
     @IBAction func accederBtAction(_ sender: Any) {
+        
+        if let email = emailtf.text, let password = passwordtf.text {
+            
+            Auth.auth().signIn(withEmail: email, password: password) {
+                (result, error) in
+                
+                if let result = result, error == nil {
+                    
+                    self.navigationController?
+                        .pushViewController(HomeViewController (email: result.user.email!, proveedor: .basic), animated: true)
+                    
+                }else{
+                    
+                    let alertController = UIAlertController(title: "Error", message: "Se ha producido un erro al registrar el usuario" , preferredStyle:  .alert)
+                    
+                    alertController.addAction(UIAlertAction(title: "Aceptar", style: .default))
+                    
+                    self.present(alertController, animated: true, completion: nil)
+                    
+                }
+            }
+        }
+
+    }
+    
+    
+    @IBAction func googleBtAction(_ sender: Any) {
     }
 }
 

@@ -16,11 +16,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="BJR-t9-rEh">
-                                <rect key="frame" x="16" y="104" width="382" height="152"/>
+                                <rect key="frame" x="16" y="104" width="382" height="208"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zK7-Ei-JnY">
                                         <rect key="frame" x="0.0" y="0.0" width="382" height="40"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MVc-ht-Au0">
@@ -34,7 +34,7 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EUR-55-9SD">
                                                 <rect key="frame" x="0.0" y="0.0" width="183" height="40"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <state key="normal" title="Registrar">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -59,6 +59,17 @@
                                             <constraint firstAttribute="height" constant="40" id="vEd-Lp-PQS"/>
                                         </constraints>
                                     </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DIG-A8-mkZ">
+                                        <rect key="frame" x="0.0" y="168" width="382" height="40"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title=" Google" image="Icon-20">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="googleBtAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ild-NV-TRi"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -72,8 +83,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="6ky-D3-Ifx"/>
                     <connections>
+                        <outlet property="GoogleBt" destination="DIG-A8-mkZ" id="dUq-Wk-sqJ"/>
                         <outlet property="accederbt" destination="GAn-sV-UBD" id="u72-as-PEz"/>
                         <outlet property="emailtf" destination="zK7-Ei-JnY" id="wYd-R2-KgV"/>
+                        <outlet property="googleBt" destination="DIG-A8-mkZ" id="YqC-jf-Hbf"/>
                         <outlet property="passwordtf" destination="MVc-ht-Au0" id="rao-4t-mdL"/>
                         <outlet property="registrarbt" destination="EUR-55-9SD" id="NKV-vc-3si"/>
                     </connections>
@@ -98,64 +111,8 @@
             </objects>
             <point key="canvasLocation" x="1022" y="116"/>
         </scene>
-        <!--Home View Controller-->
-        <scene sceneID="RgN-Jr-hcT">
-            <objects>
-                <viewController id="Vbi-I8-9eL" customClass="HomeViewController" customModule="Restaurante" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ogS-Y2-QEj">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Dk6-sU-7Y4">
-                                <rect key="frame" x="16" y="60" width="382" height="152"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vid-mn-e3Z">
-                                        <rect key="frame" x="0.0" y="0.0" width="382" height="40"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Proveedor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hWQ-Ip-vsc">
-                                        <rect key="frame" x="0.0" y="56" width="382" height="40"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yl0-Z9-Mtm">
-                                        <rect key="frame" x="0.0" y="112" width="382" height="40"/>
-                                        <color key="backgroundColor" red="0.22195648806940216" green="0.71504794382280301" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="aUk-AN-diW"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <state key="normal" title="Cerrar Sesion">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="cerrarSesionBtAction:" destination="Vbi-I8-9eL" eventType="touchUpInside" id="xV5-m0-u5i"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="Dk6-sU-7Y4" firstAttribute="top" secondItem="gcc-rm-4QE" secondAttribute="top" constant="16" id="1Lq-qb-1GL"/>
-                            <constraint firstItem="Dk6-sU-7Y4" firstAttribute="top" secondItem="gcc-rm-4QE" secondAttribute="top" constant="16" id="Dqn-YB-g9p"/>
-                            <constraint firstItem="Dk6-sU-7Y4" firstAttribute="leading" secondItem="gcc-rm-4QE" secondAttribute="leading" constant="16" id="LPR-Is-vbd"/>
-                            <constraint firstItem="gcc-rm-4QE" firstAttribute="trailing" secondItem="Dk6-sU-7Y4" secondAttribute="trailing" constant="16" id="Ryr-ng-LjG"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="gcc-rm-4QE"/>
-                    </view>
-                    <connections>
-                        <outlet property="cerrarSesionBt" destination="Yl0-Z9-Mtm" id="8XE-pv-AYh"/>
-                        <outlet property="emailLb" destination="vid-mn-e3Z" id="BXU-u3-xdt"/>
-                        <outlet property="proveedorLb" destination="hWQ-Ip-vsc" id="iUj-8l-GRZ"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="W6r-cf-oT4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1746" y="-425"/>
-        </scene>
     </scenes>
+    <resources>
+        <image name="Icon-20" width="25" height="25"/>
+    </resources>
 </document>

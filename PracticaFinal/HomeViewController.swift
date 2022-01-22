@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import FirebaseAnalytics
+import FirebaseAuth
 
 enum ProveedorType: String {
     case basic
+    case google
 }
 
 class HomeViewController: UIViewController {
@@ -33,19 +36,38 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
 
         title = "Inicio"
+        
+        navigationItem.setHidesBackButton(true, animated: false)
+        
+        emailLb.text = email
+        proveedorLb.text = proveedor.rawValue
+        
+        //Vamos a guardar los datos de los usuarios
+        
+        let defaults = UserDefaults.standard
+        defaults.set(email, forKey: "email")
+        defaults.set(proveedor.rawValue, forKey: "proveedor")
+        defaults.synchronize()
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
     @IBAction func cerrarSesionBtAction(_ sender: Any) {
+        
+        let defaults = UserDefaults.standard
+        defaults.removeObject(forKey: "email")
+        defaults.removeObject(forKey: "proveedor")
+        defaults.synchronize()
+        
+        switch proveedor {
+        case .basic, .google:
+            
+            do{
+                try Auth.auth().signOut()
+                navigationController?.popViewController(animated: true)
+            }catch {
+                //Se ha producido un error
+            }
+            
+        }
     }
 }
