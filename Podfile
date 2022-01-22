@@ -7,5 +7,6 @@ target 'PracticaFinal' do
 
   pod 'Firebase/Analytics'
   pod 'Firebase/Auth'
+  pod 'GoogleSignIn'
   
 end

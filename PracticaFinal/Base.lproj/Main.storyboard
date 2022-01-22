@@ -87,6 +87,7 @@
                         <outlet property="accederbt" destination="GAn-sV-UBD" id="u72-as-PEz"/>
                         <outlet property="emailtf" destination="zK7-Ei-JnY" id="wYd-R2-KgV"/>
                         <outlet property="googleBt" destination="DIG-A8-mkZ" id="YqC-jf-Hbf"/>
+                        <outlet property="loginStackView" destination="BJR-t9-rEh" id="zn4-iq-w9T"/>
                         <outlet property="passwordtf" destination="MVc-ht-Au0" id="rao-4t-mdL"/>
                         <outlet property="registrarbt" destination="EUR-55-9SD" id="NKV-vc-3si"/>
                     </connections>
