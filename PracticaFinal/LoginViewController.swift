@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftUI
 import Firebase
 import FirebaseAnalytics
 import FirebaseAuth
@@ -35,13 +36,16 @@ class LoginViewController: UIViewController {
             
             loginStackView.isHidden = true
             
-            navigationController?
-                .pushViewController(HomeViewController (email: email, proveedor: ProveedorType.init(rawValue: proveedor)!), animated: false)
+            
+            //navigationController?
+                //.pushViewController(HomeViewController (email: email, proveedor: //ProveedorType.init(rawValue: proveedor)!), animated: false)
+            
+            
+            self.navigationController?
+                .pushViewController(RestaurantListingTableViewController(), animated: true)
+            
         }
-                   
-        
-        
-
+                
     }
 
     @IBAction func registrarBtAction(_ sender: Any) {
@@ -53,8 +57,11 @@ class LoginViewController: UIViewController {
                 
                 if let result = result, error == nil {
                     
+                   
+                    //self.navigationController?
+                        //.pushViewController(HomeViewController (email: //result.user.email!, proveedor: .basic), animated: true)
                     self.navigationController?
-                        .pushViewController(HomeViewController (email: result.user.email!, proveedor: .basic), animated: true)
+                    .pushViewController(RestaurantListingTableViewController(), animated: true)
                     
                 }else{
                     
@@ -84,8 +91,10 @@ class LoginViewController: UIViewController {
                 
                 if let result = result, error == nil {
                     
+                    //self.navigationController?
+                        //.pushViewController(HomeViewController (email: //result.user.email!, proveedor: .basic), animated: true)
                     self.navigationController?
-                        .pushViewController(HomeViewController (email: result.user.email!, proveedor: .basic), animated: true)
+                    .pushViewController(RestaurantListingTableViewController(), animated: true)
                     
                 }else{
                     
